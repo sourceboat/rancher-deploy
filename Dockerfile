@@ -1,7 +1,10 @@
 FROM rancher/cli:v2.0.4
 
 # install dependencies
-RUN apk add --no-cache curl
+RUN apk update \
+    && apk add --no-cache \
+        ca-certificates \
+        curl
 
 # install kubectl
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kubectl \
