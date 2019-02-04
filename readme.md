@@ -30,6 +30,15 @@ Don't forget to provide `$RANCHER_TOKEN` via GitLab CI/CD variable.
 This will trigger a redeploy of the given Kubernetes deployment by updating a label
 and pull the newest image if configured correctly.
 
+## Changelog
+
+Check [releases](https://github.com/sourceboat/deploy/releases) for all notable changes.
+
+## Credits
+
+- [Phil-Bastian Berndt](https://github.com/pehbehbeh)
+- [All Contributors](https://github.com/sourceboat/deploy/graphs/contributors)
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
