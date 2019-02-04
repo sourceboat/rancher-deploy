@@ -29,3 +29,7 @@ Don't forget to provide `$RANCHER_TOKEN` via GitLab CI/CD variable.
 
 This will trigger a redeploy of the given Kubernetes deployment by updating a label
 and pull the newest image if configured correctly.
+
+## License
+
+The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
