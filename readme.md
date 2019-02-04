@@ -1,4 +1,10 @@
-# Rancher Deploy
+# sourceboat/rancher-deploy
+
+[![Docker Build Status](https://img.shields.io/docker/build/sourceboat/rancher-deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/rancher-deploy/builds/)
+[![Release](https://img.shields.io/github/release/sourceboat/rancher-deploy.svg?style=flat-square)](https://github.com/sourceboat/rancher-deploy/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/sourceboat/rancher-deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/rancher-deploy/)
+[![MicroBadger Size](https://img.shields.io/microbadger/image-size/sourceboat/rancher-deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/rancher-deploy)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/sourceboat/rancher-deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/rancher-deploy)
 
 This docker image enables simple deployments to Rancher.
 It is a small alpine image with [Rancher CLI](https://rancher.com/docs/rancher/v2.x/en/cli/) `rancher`
@@ -32,12 +38,12 @@ and pull the newest image if configured correctly.
 
 ## Changelog
 
-Check [releases](https://github.com/sourceboat/deploy/releases) for all notable changes.
+Check [releases](https://github.com/sourceboat/rancher-deploy/releases) for all notable changes.
 
 ## Credits
 
 - [Phil-Bastian Berndt](https://github.com/pehbehbeh)
-- [All Contributors](https://github.com/sourceboat/deploy/graphs/contributors)
+- [All Contributors](https://github.com/sourceboat/rancher-deploy/graphs/contributors)
 
 ## License
 
