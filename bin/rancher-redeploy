@@ -1,0 +1,2 @@
+#!/bin/sh
+rancher kubectl patch deployment $2 -n $1 -p \ "{\"spec\":{\"template\":{\"metadata\":{\"labels\":{\"ci_deployment_date\":\"`date +'%s'`\"}}}}}"
