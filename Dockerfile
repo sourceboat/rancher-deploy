@@ -8,12 +8,13 @@ RUN apk update \
 
 # install kubectl
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kubectl \
-    && chmod +x ./kubectl \
     && mv ./kubectl /usr/local/bin/kubectl
 
-# add rancher-redeploy script
-COPY bin/rancher-redeploy /usr/local/bin/
-RUN chmod +x /usr/local/bin/rancher-redeploy
+# add helper scripts
+COPY bin/ /usr/local/bin/
+
+## make all binaries executable
+RUN chmod +x /usr/local/bin/*
 
 # reset entrypoint
 ENTRYPOINT []

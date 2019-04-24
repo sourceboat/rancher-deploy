@@ -1,0 +1,4 @@
+#!/bin/sh
+POD=$(rancher kubectl get pod -l workload.user.cattle.io/workloadselector=deployment-$1-$2 -n $1 -o jsonpath="{.items[0].metadata.name}")
+echo "INFO: executing '$3' in pod '$POD'\n"
+rancher kubectl exec $POD -n $1 $3
