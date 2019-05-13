@@ -10,11 +10,11 @@ This docker image enables simple deployments to Rancher.
 It is a small alpine image with [Rancher CLI](https://rancher.com/docs/rancher/v2.x/en/cli/) `rancher`
 and [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/) `kubectl` installed.
 
-It also comes with a custom `rancher-redeploy` command (see usage section).
+It also comes with a custom `rancher-redeploy` and `rancher-exec` command helper (see usage section).
 
 ## Usage
 
-### Simple Redeploy via GitLab CI
+### Simple Redeploy via GitLab CI and `rancher-redeploy` helper
 
 To use this image via GitLab CI add the following to the `.gitlab-ci.yml`:
 
@@ -35,6 +35,12 @@ Don't forget to provide `$RANCHER_TOKEN` via GitLab CI/CD variable.
 
 This will trigger a redeploy of the given Kubernetes deployment by updating a label
 and pull the newest image if configured correctly.
+
+### Execute Command via `rancher-exec` helper
+
+You can also execute commands in pods of your deployment via `rancher-exec $K8S_NAMESPACE $K8S_DEPLOYMENT 'ls'`.
+This will execute the given command in the first pod of your deployment.
+Currently this is only tested with single container pods.
 
 ## Changelog
 
