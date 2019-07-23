@@ -1,6 +1,6 @@
 # sourceboat/rancher-deploy
 
-[![Docker Build Status](https://img.shields.io/docker/build/sourceboat/rancher-deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/rancher-deploy/builds/)
+[![Docker Build Status](https://img.shields.io/docker/cloud/build/sourceboat/rancher-deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/rancher-deploy/builds/)
 [![Release](https://img.shields.io/github/release/sourceboat/rancher-deploy.svg?style=flat-square)](https://github.com/sourceboat/rancher-deploy/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/sourceboat/rancher-deploy.svg?style=flat-square)](https://hub.docker.com/r/sourceboat/rancher-deploy/)
 [![MicroBadger Size](https://img.shields.io/microbadger/image-size/sourceboat/rancher-deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/rancher-deploy)
