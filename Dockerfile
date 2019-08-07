@@ -1,4 +1,4 @@
-FROM rancher/cli:v2.2.0
+FROM rancher/cli:v2.0.4
 
 # install dependencies
 RUN apk update \
