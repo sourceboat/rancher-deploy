@@ -7,8 +7,12 @@
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/sourceboat/rancher-deploy.svg?style=flat-square)](https://microbadger.com/images/sourceboat/rancher-deploy)
 
 This docker image enables simple deployments to Rancher.
-It is a small alpine image with [Rancher CLI](https://rancher.com/docs/rancher/v2.x/en/cli/) `rancher`
-and [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/) `kubectl` installed.
+
+## What's included?
+
+- [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/) `kubectl`
+- [Rancher CLI](https://rancher.com/docs/rancher/v2.x/en/cli/) `rancher`
+- [Sentry CLI](https://docs.sentry.io/cli/) `sentry-cli`
 
 It also comes with a custom `rancher-redeploy` and `rancher-exec` command helper (see usage section).
 
