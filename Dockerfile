@@ -4,7 +4,11 @@ FROM rancher/cli:v2.0.4
 RUN apk update \
     && apk add --no-cache \
         ca-certificates \
-        curl
+        curl \
+        bash
+
+# change default shell
+SHELL ["/bin/bash", "-c"]
 
 # install kubectl
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kubectl \
