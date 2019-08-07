@@ -10,6 +10,7 @@ This docker image enables simple deployments to Rancher.
 
 ## What's included?
 
+- [Git CLI](https://git-scm.com/) `git`
 - [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/) `kubectl`
 - [Rancher CLI](https://rancher.com/docs/rancher/v2.x/en/cli/) `rancher`
 - [Sentry CLI](https://docs.sentry.io/cli/) `sentry-cli`
