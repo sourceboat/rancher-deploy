@@ -5,6 +5,7 @@ RUN apk update \
     && apk add --no-cache \
         ca-certificates \
         curl \
+        git \
         bash
 
 # change default shell
