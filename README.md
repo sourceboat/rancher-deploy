@@ -26,7 +26,7 @@ To use this image via GitLab CI add the following to the `.gitlab-ci.yml`:
 ```yml
 deploy:
   stage: deploy
-  image: sourceboat/rancher-deploy:stable
+  image: sourceboat/rancher-deploy:latest
   variables:
     RANCHER_URL: https://rancher.example.com
     K8S_NAMESPACE: my-namespace-name

@@ -1,4 +1,4 @@
-FROM rancher/cli:v2.0.4
+FROM rancher/cli2:v2.6.4
 
 # install dependencies
 RUN apk update \
@@ -15,7 +15,7 @@ SHELL ["/bin/bash", "-c"]
 RUN curl -sL https://sentry.io/get-cli/ | bash
 
 # install kubectl
-RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kubectl \
+RUN curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl" \
     && mv ./kubectl /usr/local/bin/kubectl
 
 # add helper scripts
